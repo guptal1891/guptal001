@@ -51,5 +51,6 @@ public class Dedup_RedupString {
 
 		System.out.println(dedupe("aaaaaaaabbbbccccbbbb", 4));
 		System.out.println(redupe("aaaa-0-1,bbbb-2-4,cccc-3,", 4));
+		System.out.println(Integer.SIZE);
 	}
 }

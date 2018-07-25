@@ -1,6 +1,6 @@
 package progs;
 
-public class DigitLettersProg {
+public class DigitToAlphabetDecoding {
   
 //Given a digit sequence of length n,
 //returns count of possible decodings by
