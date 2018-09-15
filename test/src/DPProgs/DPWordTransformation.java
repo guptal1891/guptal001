@@ -1,4 +1,4 @@
-package progs;
+package DPProgs;
 
 public class DPWordTransformation {
 

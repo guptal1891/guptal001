@@ -9,10 +9,9 @@ public class RotateArray {
 			int temp = arr[i];
 
 			int j = i;
-			int k = j + d;
 			while (true) {
-				k = j + d;
-				
+				int k = j + d;
+
 				if (k >= n) {
 					k = k - n;
 				}

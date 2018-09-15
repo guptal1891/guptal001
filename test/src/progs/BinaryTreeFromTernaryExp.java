@@ -2,6 +2,9 @@ package progs;
 
 import java.util.Stack;
 
+/*
+ * https://www.geeksforgeeks.org/convert-ternary-expression-binary-tree/
+ */
 public class BinaryTreeFromTernaryExp {
 
 	class Node {
