@@ -17,6 +17,10 @@ public class StringBasics {
 		int index = 0;
 		int count = 0;
 
+		StringBuffer sb = new StringBuffer("abcd");
+		sb.append('A');
+		System.out.println(sb);
+		
 		int x = str2.indexOf('*');
 		String startSubstr = str2.substring(0, x);
 		String endSubstr = str2.substring(x + 1);

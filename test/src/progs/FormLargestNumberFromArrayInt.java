@@ -9,16 +9,16 @@ public class FormLargestNumberFromArrayInt {
 
 	static String getMaxNumber(int size, int[] arr) {
 
-		List<String> list = new ArrayList<>();
+		List<Integer> list = new ArrayList<>();
 		for (int x : arr)
-			list.add(String.valueOf(x));
+			list.add(x);
 
-		Collections.sort(list, new Comparator<String>() {
+		Collections.sort(list, new Comparator<Integer>() {
 			@Override
-			public int compare(String str1, String str2) {
+			public int compare(Integer str1, Integer str2) {
 
-				String XY = str1 + str2;
-				String YX = str2 + str1;
+				String XY = str1.toString() + str2.toString();
+				String YX = str2.toString() + str1.toString();
 
 				return XY.compareTo(YX) > 0 ? -1 : 1;
 			}
@@ -26,9 +26,9 @@ public class FormLargestNumberFromArrayInt {
 
 		StringBuffer sb = new StringBuffer();
 
-		for (String str : list) {
+		for (Integer num : list) {
 
-			sb = sb.append(str);
+			sb = sb.append(num);
 		}
 		return sb.toString();
 	}

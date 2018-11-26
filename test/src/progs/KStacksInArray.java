@@ -1,5 +1,8 @@
 package progs;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class KStacksInArray {
 	// Java program to demonstrate implementation of k stacks in a single
 	// array in time and space efficient way
@@ -49,7 +52,7 @@ public class KStacksInArray {
 			int i = free; // Store index of first free slot
 
 			// Update index of free slot to index of next slot in free list
-			free = next[i];
+			free = next[free];
 
 			// Update next of top and then top for stack number 'sn'
 			next[i] = top[sn];
@@ -71,7 +74,6 @@ public class KStacksInArray {
 			int i = top[sn];
 
 			top[sn] = next[i]; // Change top to store next of previous top
-
 			// Attach the previous top to the beginning of free list
 			next[i] = free;
 			free = i;
